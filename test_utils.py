@@ -4,18 +4,17 @@
 
 import unittest
 import utils
+import math 
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
         self.assertEqual(utils.fact(0), 1)
     
     def test_roots(self):
-        # À compléter...
-        pass
+        self.assertEqual(utils.roots(5,0,0), 2)
     
     def test_integrate(self):
-        # À compléter...
-        pass
+        self.assertAlmostEqual(utils.integrate("math.sqrt(x)",0,1), 5)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
