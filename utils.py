@@ -25,21 +25,9 @@ def roots(a, b, c):
 	
 
 def integrate(function, lower, upper):
-	résultat = integrate.quad(lambda x : eval(function), lower, upper)
+	resultat = integrate.quad(lambda x : eval(function), lower, upper)
+	return resultat
 
-	"""Approximates the integral of a fonction between two bounds
-	
-	Pre: 'function' is a valid Python expression with x as a variable,
-		'lower' <= 'upper',
-		'function' continuous and integrable between 'lower‘ and 'upper'.
-	Post: Returns an approximation of the integral from 'lower' to 'upper'
-		of the specified 'function'.
-
-	Hint: You can use the 'integrate' function of the module 'scipy' and
-		you'll probably need the 'eval' function to evaluate the function
-		to integrate given as a string.
-	"""
-	pass
 
 if __name__ == '__main__':
 	print(fact(5))
