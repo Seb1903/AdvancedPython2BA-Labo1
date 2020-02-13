@@ -11,10 +11,10 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.fact(0), 1)
     
     def test_roots(self):
-        self.assertEqual(utils.roots(5,0,0), 2)
+        self.assertEqual(utils.roots(5,0,0),0)
     
     def test_integrate(self):
-        self.assertAlmostEqual(utils.integrate("math.sin(x)",0,3.14), 0)
+        self.assertAlmostEqual(utils.integrate("x",0,1), 1/2)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
