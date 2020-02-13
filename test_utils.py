@@ -7,8 +7,7 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        # À compléter...
-        pass
+        self.assertEqual(utils.fact(0), 1)
     
     def test_roots(self):
         # À compléter...
