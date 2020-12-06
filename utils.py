@@ -24,6 +24,8 @@ def roots(a, b, c):
 		return (root1, root2)
 	elif root1 == root2 : 
 		return (root1)
+	else : 
+		"il y a une erreur"
 
 
 	
